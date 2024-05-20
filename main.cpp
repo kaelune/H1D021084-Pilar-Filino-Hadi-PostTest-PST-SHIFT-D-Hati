@@ -13,16 +13,14 @@ void setup() {
 }
 
 void loop() {
-    for(int pos = 0; pos <= 180; pos += 10) {
-        servo.write(pos);
-        digitalWrite(LEDmerah, LOW);
-        digitalWrite(LEDhijau, HIGH);
-        delay(10);
+    for(int pos = 0; pos <= 180; pos += 10) { //Looping untuk servo yang akan bergerak setiap 10 posisi membuka setiap pergerakan
+        servo.write(pos);  //Lokasi servo ssesuai dengan posisinya
+        digitalWrite(LEDmerah, LOW); //Ketika servo bergerak membuka, LED merah redup
+        digitalWrite(LEDhijau, HIGH); // Ketika servo bergerak membuka, LED hijau menyala abangkuh
     }
-    for(int pos = 180; pos >= 0; pos -= 10) {
-        servo.write(pos);
-        digitalWrite(LEDmerah, HIGH);
-        digitalWrite(LEDhijau, LOW);
-        delay(10);
+    for(int pos = 180; pos >= 0; pos -= 10) {  //Looping untuk servo yang akan menutup setiap 10 posisi membuka setiap pergerakan
+        servo.write(pos);    //Lokasi servo sesuai dengan posisinya
+        digitalWrite(LEDmerah, HIGH); //Ketika servo bergerak menutup, LED merah menyala abangkuh
+        digitalWrite(LEDhijau, LOW); //Ketika servo bergerak menutup, LED hijau redup, tetap ilmu padi
     }
 }
