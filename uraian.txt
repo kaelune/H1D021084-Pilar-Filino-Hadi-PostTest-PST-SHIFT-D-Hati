@@ -1,0 +1,19 @@
+Nama 	: Pilar Filino Hadi
+NIM	: H1D021084
+Shift 	: D
+Paket  : hati (Servo dan LED)
+
+1. Servo : Servo berputar sesuai warna LED, Jika LED berwarna merah menyala, maka servo akan menutup. Sebaliknya jika LED berwarna hijau menyala maka servo akan bergerak seolah membuka akses. servo didefinisikan dahulu beserta nama, kemudian ditambahkan nama.attach(pin digital yang dimasukkan), misalnya pin D3. Yang nantinya servo akan bergerak tergantung pada posisi awal dan seberapa cepat laju geraknya, kemudian akan dijalankan perintah if else, jika LED berwarna hijau, maka Servo bergerak membuka, sebaliknya jika LED merah menyala, servo bergerak menutup
+
+2. LED : LED akan enyala sesuai gerak arah servo, misalnya jika servo menutup, maka LED berwarna merah akan menyala, sebaliknya jika servo bergerak seolah membuka, maka LED berwarna hijau akan menyala. LED harus dibuat inisialisasi bahwa dia akan di output denga pin yang tertanam ada masing masing digital, misalnya LED merah ditancapkan pada ppin D1, dan LED hijau ditancakan pada pin D2. Nantinya LED akan dijalankan melalui perintah if else
+
+3.  - Jam digital beserta alarm waktu
+    - Mesin palang pintu otomatis pada pintu keluar dan masuk parkir
+    - Billboard yang memunculkan gambar digital per pixel pada mall, di jalan raya
+    - Penjadwalan nyala matinya lampu berdasarkan waktu
+    - Lampu lalu lintas di jalan raya
+    - Mesin pemberi makan anjing otomatis
+    - Mesin pencapit boneka
+    - Mesin kasir yang memunculkan harga barang dan total harga
+
+4. Projek Pemrograman Sistem Tertanam yang akan kita buat nantinya adalah jam digital beserta waktunya, yang nantinya akan menggunakan arduino nano v3, RTC untuk menunjukkan informasi wwaktu real timenya, dan buzzer sebagai alert alarm yang telah diatur sesuai dengan jam yang ditentukan.
